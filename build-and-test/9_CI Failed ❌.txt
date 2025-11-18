@@ -1,0 +1,5 @@
+﻿2025-11-18T21:45:06.0852121Z ##[group]Run echo "Something went wrong! Check the logs above."
+2025-11-18T21:45:06.0852804Z [36;1mecho "Something went wrong! Check the logs above."[0m
+2025-11-18T21:45:06.0886977Z shell: /usr/bin/bash -e {0}
+2025-11-18T21:45:06.0887227Z ##[endgroup]
+2025-11-18T21:45:06.0995469Z Something went wrong! Check the logs above.

@@ -1,0 +1,155 @@
+﻿2025-11-18T21:45:02.2647643Z Current runner version: '2.329.0'
+2025-11-18T21:45:02.2671830Z ##[group]Runner Image Provisioner
+2025-11-18T21:45:02.2672931Z Hosted Compute Agent
+2025-11-18T21:45:02.2673558Z Version: 20251016.436
+2025-11-18T21:45:02.2674182Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+2025-11-18T21:45:02.2674830Z Build Date: 2025-10-15T20:44:12Z
+2025-11-18T21:45:02.2675475Z ##[endgroup]
+2025-11-18T21:45:02.2676050Z ##[group]Operating System
+2025-11-18T21:45:02.2676577Z Ubuntu
+2025-11-18T21:45:02.2677093Z 24.04.3
+2025-11-18T21:45:02.2677530Z LTS
+2025-11-18T21:45:02.2677982Z ##[endgroup]
+2025-11-18T21:45:02.2678411Z ##[group]Runner Image
+2025-11-18T21:45:02.2679054Z Image: ubuntu-24.04
+2025-11-18T21:45:02.2679530Z Version: 20251112.124.1
+2025-11-18T21:45:02.2680537Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+2025-11-18T21:45:02.2682134Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+2025-11-18T21:45:02.2683465Z ##[endgroup]
+2025-11-18T21:45:02.2684583Z ##[group]GITHUB_TOKEN Permissions
+2025-11-18T21:45:02.2686594Z Contents: read
+2025-11-18T21:45:02.2687221Z Metadata: read
+2025-11-18T21:45:02.2687739Z Packages: read
+2025-11-18T21:45:02.2688192Z ##[endgroup]
+2025-11-18T21:45:02.2690299Z Secret source: Actions
+2025-11-18T21:45:02.2690966Z Prepare workflow directory
+2025-11-18T21:45:02.3013055Z Prepare all required actions
+2025-11-18T21:45:02.3050665Z Getting action download info
+2025-11-18T21:45:02.7621281Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-11-18T21:45:02.8807155Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-11-18T21:45:03.0536725Z Complete job name: build-and-test
+2025-11-18T21:45:03.1210842Z ##[group]Run actions/checkout@v4
+2025-11-18T21:45:03.1211662Z with:
+2025-11-18T21:45:03.1212054Z   repository: ahmed-226m/Hello-World-CI
+2025-11-18T21:45:03.1212882Z   token: ***
+2025-11-18T21:45:03.1213275Z   ssh-strict: true
+2025-11-18T21:45:03.1213649Z   ssh-user: git
+2025-11-18T21:45:03.1214050Z   persist-credentials: true
+2025-11-18T21:45:03.1214483Z   clean: true
+2025-11-18T21:45:03.1214872Z   sparse-checkout-cone-mode: true
+2025-11-18T21:45:03.1215331Z   fetch-depth: 1
+2025-11-18T21:45:03.1215711Z   fetch-tags: false
+2025-11-18T21:45:03.1216091Z   show-progress: true
+2025-11-18T21:45:03.1216479Z   lfs: false
+2025-11-18T21:45:03.1216829Z   submodules: false
+2025-11-18T21:45:03.1217223Z   set-safe-directory: true
+2025-11-18T21:45:03.1217887Z ##[endgroup]
+2025-11-18T21:45:03.2293779Z Syncing repository: ahmed-226m/Hello-World-CI
+2025-11-18T21:45:03.2296729Z ##[group]Getting Git version info
+2025-11-18T21:45:03.2298100Z Working directory is '/home/runner/work/Hello-World-CI/Hello-World-CI'
+2025-11-18T21:45:03.2299864Z [command]/usr/bin/git version
+2025-11-18T21:45:03.2359589Z git version 2.51.2
+2025-11-18T21:45:03.2399785Z ##[endgroup]
+2025-11-18T21:45:03.2417462Z Temporarily overriding HOME='/home/runner/work/_temp/cbb98307-2ff8-427e-b4b2-126db735228c' before making global git config changes
+2025-11-18T21:45:03.2418852Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-18T21:45:03.2425547Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Hello-World-CI/Hello-World-CI
+2025-11-18T21:45:03.2467053Z Deleting the contents of '/home/runner/work/Hello-World-CI/Hello-World-CI'
+2025-11-18T21:45:03.2471064Z ##[group]Initializing the repository
+2025-11-18T21:45:03.2477203Z [command]/usr/bin/git init /home/runner/work/Hello-World-CI/Hello-World-CI
+2025-11-18T21:45:03.2576829Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-11-18T21:45:03.2578234Z hint: is subject to change. To configure the initial branch name to use in all
+2025-11-18T21:45:03.2579378Z hint: of your new repositories, which will suppress this warning, call:
+2025-11-18T21:45:03.2580450Z hint:
+2025-11-18T21:45:03.2580931Z hint: 	git config --global init.defaultBranch <name>
+2025-11-18T21:45:03.2582313Z hint:
+2025-11-18T21:45:03.2583548Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-11-18T21:45:03.2585178Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-11-18T21:45:03.2586462Z hint:
+2025-11-18T21:45:03.2587200Z hint: 	git branch -m <name>
+2025-11-18T21:45:03.2587969Z hint:
+2025-11-18T21:45:03.2588957Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-11-18T21:45:03.2590757Z Initialized empty Git repository in /home/runner/work/Hello-World-CI/Hello-World-CI/.git/
+2025-11-18T21:45:03.2593951Z [command]/usr/bin/git remote add origin https://github.com/ahmed-226m/Hello-World-CI
+2025-11-18T21:45:03.2625111Z ##[endgroup]
+2025-11-18T21:45:03.2625851Z ##[group]Disabling automatic garbage collection
+2025-11-18T21:45:03.2628939Z [command]/usr/bin/git config --local gc.auto 0
+2025-11-18T21:45:03.2657576Z ##[endgroup]
+2025-11-18T21:45:03.2658232Z ##[group]Setting up auth
+2025-11-18T21:45:03.2663993Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-18T21:45:03.2693386Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-18T21:45:03.3009981Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-18T21:45:03.3038743Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-18T21:45:03.3260772Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-11-18T21:45:03.3297812Z ##[endgroup]
+2025-11-18T21:45:03.3298482Z ##[group]Fetching the repository
+2025-11-18T21:45:03.3320667Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +83dbb902f2c55315bbdd8c9c6231a86b3cceb75f:refs/remotes/origin/main
+2025-11-18T21:45:03.7324505Z From https://github.com/ahmed-226m/Hello-World-CI
+2025-11-18T21:45:03.7325816Z  * [new ref]         83dbb902f2c55315bbdd8c9c6231a86b3cceb75f -> origin/main
+2025-11-18T21:45:03.7354932Z ##[endgroup]
+2025-11-18T21:45:03.7355966Z ##[group]Determining the checkout info
+2025-11-18T21:45:03.7357140Z ##[endgroup]
+2025-11-18T21:45:03.7361975Z [command]/usr/bin/git sparse-checkout disable
+2025-11-18T21:45:03.7398855Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-11-18T21:45:03.7425761Z ##[group]Checking out the ref
+2025-11-18T21:45:03.7429138Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-11-18T21:45:03.7473347Z Switched to a new branch 'main'
+2025-11-18T21:45:03.7476343Z branch 'main' set up to track 'origin/main'.
+2025-11-18T21:45:03.7481835Z ##[endgroup]
+2025-11-18T21:45:03.7513410Z [command]/usr/bin/git log -1 --format=%H
+2025-11-18T21:45:03.7535264Z 83dbb902f2c55315bbdd8c9c6231a86b3cceb75f
+2025-11-18T21:45:03.7765568Z ##[group]Run actions/setup-node@v4
+2025-11-18T21:45:03.7766079Z with:
+2025-11-18T21:45:03.7766420Z   node-version: 20
+2025-11-18T21:45:03.7766801Z   cache: npm
+2025-11-18T21:45:03.7767152Z   always-auth: false
+2025-11-18T21:45:03.7767547Z   check-latest: false
+2025-11-18T21:45:03.7768082Z   token: ***
+2025-11-18T21:45:03.7768425Z ##[endgroup]
+2025-11-18T21:45:03.9482238Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+2025-11-18T21:45:03.9487556Z ##[group]Environment details
+2025-11-18T21:45:04.2826726Z node: v20.19.5
+2025-11-18T21:45:04.2828023Z npm: 10.8.2
+2025-11-18T21:45:04.2828982Z yarn: 1.22.22
+2025-11-18T21:45:04.2830917Z ##[endgroup]
+2025-11-18T21:45:04.2852978Z [command]/opt/hostedtoolcache/node/20.19.5/x64/bin/npm config get cache
+2025-11-18T21:45:04.3991365Z /home/runner/.npm
+2025-11-18T21:45:04.7103206Z npm cache is not found
+2025-11-18T21:45:04.7222408Z ##[group]Run npm ci
+2025-11-18T21:45:04.7224344Z [36;1mnpm ci[0m
+2025-11-18T21:45:04.7268150Z shell: /usr/bin/bash -e {0}
+2025-11-18T21:45:04.7268453Z ##[endgroup]
+2025-11-18T21:45:05.9385572Z 
+2025-11-18T21:45:05.9394415Z added 69 packages, and audited 70 packages in 1s
+2025-11-18T21:45:05.9394869Z 
+2025-11-18T21:45:05.9395107Z 14 packages are looking for funding
+2025-11-18T21:45:05.9395454Z   run `npm fund` for details
+2025-11-18T21:45:05.9396454Z 
+2025-11-18T21:45:05.9396652Z found 0 vulnerabilities
+2025-11-18T21:45:05.9534333Z ##[group]Run npm run lint
+2025-11-18T21:45:05.9534613Z [36;1mnpm run lint[0m
+2025-11-18T21:45:05.9569926Z shell: /usr/bin/bash -e {0}
+2025-11-18T21:45:05.9570174Z ##[endgroup]
+2025-11-18T21:45:06.0670913Z 
+2025-11-18T21:45:06.0671525Z > beginner@1.0.0 lint
+2025-11-18T21:45:06.0671947Z > eslint . --ext .js
+2025-11-18T21:45:06.0672111Z 
+2025-11-18T21:45:06.0711418Z sh: 1: eslint: not found
+2025-11-18T21:45:06.0794148Z ##[error]Process completed with exit code 127.
+2025-11-18T21:45:06.0852139Z ##[group]Run echo "Something went wrong! Check the logs above."
+2025-11-18T21:45:06.0852816Z [36;1mecho "Something went wrong! Check the logs above."[0m
+2025-11-18T21:45:06.0886991Z shell: /usr/bin/bash -e {0}
+2025-11-18T21:45:06.0887230Z ##[endgroup]
+2025-11-18T21:45:06.0995492Z Something went wrong! Check the logs above.
+2025-11-18T21:45:06.1080930Z Post job cleanup.
+2025-11-18T21:45:06.2073186Z [command]/usr/bin/git version
+2025-11-18T21:45:06.2113453Z git version 2.51.2
+2025-11-18T21:45:06.2164146Z Temporarily overriding HOME='/home/runner/work/_temp/d64b5ae6-3f36-404d-8bf1-2885c8dd5d93' before making global git config changes
+2025-11-18T21:45:06.2165777Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-18T21:45:06.2170467Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Hello-World-CI/Hello-World-CI
+2025-11-18T21:45:06.2207230Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-18T21:45:06.2240025Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-18T21:45:06.3158238Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-18T21:45:06.3182952Z http.https://github.com/.extraheader
+2025-11-18T21:45:06.3199388Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-11-18T21:45:06.3233325Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-18T21:45:06.3551579Z Cleaning up orphan processes

@@ -1,0 +1,10 @@
+﻿2025-11-18T21:45:05.9534311Z ##[group]Run npm run lint
+2025-11-18T21:45:05.9534608Z [36;1mnpm run lint[0m
+2025-11-18T21:45:05.9569911Z shell: /usr/bin/bash -e {0}
+2025-11-18T21:45:05.9570171Z ##[endgroup]
+2025-11-18T21:45:06.0670820Z 
+2025-11-18T21:45:06.0671505Z > beginner@1.0.0 lint
+2025-11-18T21:45:06.0671943Z > eslint . --ext .js
+2025-11-18T21:45:06.0672107Z 
+2025-11-18T21:45:06.0711389Z sh: 1: eslint: not found
+2025-11-18T21:45:06.0794121Z ##[error]Process completed with exit code 127.
